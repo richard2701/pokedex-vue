@@ -1,5 +1,8 @@
 # pokedex-vue
 
+## Repo
+https://github.com/richard2701/pokedex-vue.git
+
 ## Project setup
 ```
 npm install
