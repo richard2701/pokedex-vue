@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap');
+@import "animation.scss";
+
+html {
+  min-height:100%;/* make sure it is at least as tall as the viewport */
+  background-color: #f9f9f9;
+}
+
+#app {
+  font-family: 'Lato', sans-serif;
+  background-color: #f9f9f9;
+  flex: 1 0 auto;
+
+}
+
+$redColor: #F22539;
+
+.btn-red {
+  color: #ffffff;
+  background-color: $redColor;
+  font-weight: 400;
+  font-size: 1.5rem;
+
+  &--modal {
+    font-size: 1rem;
+
+    @media (min-width: 768px) { 
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.app-home {
+  &__content {
+    text-align: center;
+
+    @media (min-width: 768px) { 
+      height: 100vh;
+    }
+  }
+}
+
+.app-search {
+  &__content {
+    text-align: center;
+  }
+
+  &__list {
+    margin-top: 2.5rem;
+  }
+
+  .input-group-text {
+    background-color: #ffffff !important;
+  }
+
+}
+footer {
+  flex-shrink: none;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px -4px 5px 0px rgba(0,0,0,0.15);
+  -moz-box-shadow: 0px -4px 5px 0px rgba(0,0,0,0.15);
+  box-shadow: 0px -4px 5px 0px rgba(0,0,0,0.15);
+}
+
+.btn-footer {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 1rem;
+  width: 46%;
+    
+  &--all {
+    background-color: $redColor;
+  }
+
+  &--fav {
+    background-color: #BFBFBF;
+  }
+
+  @media (min-width: 768px) { 
+    font-size: 1.5rem;
+  }
+
+}
+
+.btn-active {
+  color: #eca539ff;
+}
+
+.modal {
+
+
+  &__equis {
+    right: 0;
+  }
+
+  &__background {
+    border-radius: 3px;
+  }
+
+  &__img-pokemon {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%; height: auto;
+  }
+
+  .modal-footer {
+    text-align: center;
+    padding-top: 0px;
+    border-top: 0px;
+    justify-content: center;
+  }
+
+  
+}
