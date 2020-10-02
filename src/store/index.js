@@ -36,6 +36,7 @@ export default new Vuex.Store({
     },
 
     setFavorities(state, value) {
+      state.disable = true
       state.queryFav = value
     },
 
@@ -65,6 +66,7 @@ export default new Vuex.Store({
     },
 
    getPokemonAll: async ( { commit }) => {
+    commit('loading', true)
     await axios.get ('https://pokeapi.co/api/v2/pokemon' , {
       headers: {
       'Authorization': 'Bearer' + 'Your Bearer Pssword',
